@@ -1,0 +1,131 @@
+button{
+   cursor: pointer;
+}
+
+.newProduct{
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   background-color: white;
+   width: 60vw;
+   margin-left: 20vw;
+   padding: 30px 0;
+   color: rgb(131 117 179);
+   font-weight: bold;
+   font-size: 1.5em;
+   border-radius: 20px;
+}
+
+.productInput{
+   width: 100%;
+}
+
+.newProduct button{
+   background-color: rgb(131 117 179);
+   color: white;
+   border: none;
+   border-radius: 980px;
+   padding: 10px;
+   width: 250px;
+   font-size: 1em;
+   margin-right: 8%;
+}
+
+.productInput span{
+   color: red;
+}
+
+.productSpec{
+   width: 100%;
+   padding-bottom: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.productSpec input{
+   border-color: rgb(131 117 179);
+   width: 60%;
+   font-size: 1em;
+   margin-top: 10px;
+   font-weight: bold;
+   text-align: center;
+}
+
+.product{
+   background-color: white;
+   border-radius: 20px;
+   width: 90vw;
+   margin: 50px 5vw;
+   color: rgb(131 117 179);
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+.product table{
+   width: 100%;
+   padding: 30px 0;
+   table-layout: fixed;
+}
+
+.product th{
+   width: 16.6%;
+}
+
+.product td{
+   text-align: center;
+   padding-top: 20px;
+   width: 16.6%;
+}
+
+.product td div{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis
+}
+
+#tableBody .bi{
+   background-color: rgb(131 117 179);
+   color: rgb(240, 240, 240);
+   border-radius: 50%;
+   padding: 5%;
+   cursor: pointer;
+}
+
+#modify{
+   position: fixed;
+   z-index: 100;
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   visibility: hidden;
+}
+
+#modifyProduct{
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   background-color: white;
+   width: 60vw;
+   padding: 30px 0;
+   color: rgb(131 117 179);
+   font-weight: bold;
+   font-size: 1.2em;
+   border-radius: 20px;
+}
+
+#modifyProduct button{
+   background-color: rgb(131 117 179);
+   color: white;
+   border: none;
+   border-radius: 980px;
+   padding: 10px;
+   width: 250px;
+   font-size: 1em;
+   margin-right: 8%;
+}

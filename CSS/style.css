@@ -1,0 +1,98 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+   font-family: 'Sora', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+   background-color: rgb(240, 240, 240);
+}
+
+header{
+   margin-bottom: 3em;
+   padding: 0.5em 2em;
+   background-color: rgb(131 117 179);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   .bi-keyboard-fill{
+      font-size: 5em;
+   }
+}
+
+h1{
+   font-size: 3em;
+   text-align: center;
+}
+
+.addProduct{
+   padding: 7px;
+   border: none;
+   border-radius: 980px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+
+   .bi{
+      font-size: 1.5em;
+   }
+}
+
+.cardContainer{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   margin: 2em 10vw;
+   position: relative;
+   justify-content: space-around;
+}
+
+.card{
+   width: 15vw;
+   background-color: white;
+   border-radius: 10px;
+   margin-bottom: 40px;
+   max-width: 220px;
+   cursor: pointer;
+   transition: 500ms;
+}
+
+.card:hover{
+   scale: 1.1;
+}
+
+.cardImgContainer{
+   width: 100%;
+   height: 200px;
+}
+
+.cardImg{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px 10px 0 0;
+   object-fit: cover;
+}
+
+.cardText{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 30px 10px 50px 10px;
+}
+
+.brandName{
+   color: gray;
+   font-weight: bold;
+}
+
+.modelName{
+   font-weight: bold;
+}
+
+.price{
+   color: rgb(131 117 179);
+   font-weight: 600;
+}

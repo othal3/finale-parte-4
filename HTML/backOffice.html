@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="../CSS/style.css">
+   <link rel="stylesheet" href="../CSS/backOffice.css">
+</head>
+<body>
+   <header>
+      <i class="bi bi-keyboard-fill"></i>
+      <button onclick="homePage()" class="addProduct"><h2 class="addProduct"><i class="bi bi-house-door-fill"></i>  Home Page</h2></button>
+   </header>
+
+   <main>
+      <section class="newProduct">
+         <div class="productInput">
+            <div class="productSpec">
+            <h3>
+               Nome Prodotto
+            </h3>
+            <input type="text" id="name">
+            <span id="nameError"></span>
+            </div>
+            <div class="productSpec">
+            <h3>
+               Descrizione Prodotto
+            </h3>
+            <input type="text" id="description">
+            <span id="descriptionError"></span>
+            </div>
+            <div class="productSpec">
+            <h3>
+               Nome Brand
+            </h3>
+            <input type="text" id="brand">
+            <span id="brandError"></span>
+            </div>
+            <div class="productSpec">
+            <h3>
+               Immagine Prodotto
+            </h3>
+            <input type="text" id="imageUrl">
+            <span id="imageUrlError"></span>
+            </div>
+            <div class="productSpec">
+            <h3>
+               Prezzo Prodotto
+            </h3>
+            <input type="number" id="price" step="any">
+            <span id="priceError"></span>
+            </div>
+         </div>
+         <button onclick="save()">Aggiungi Prodotto</button>
+      </section>
+
+      <section class="product">
+         <table
+            <thead>
+               <tr>
+                  <th>Nome</th>
+                  <th>Descrizione</th>
+                  <th>Brand</th>
+                  <th>Immagine</th>
+                  <th>Prezzo</th>
+                  <th><i class="bi bi-trash3-fill"></i> <i class="bi bi-pencil-square"></i></th>
+               </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+         </table>
+      </section>
+
+      <section id="modify">
+         <div id="modifyProduct">
+            <div class="productInput">
+               <div class="productSpec">
+               <h3>
+                  Nome Prodotto
+               </h3>
+               <input type="text" id="nameModify">
+               <span id="nameModifyError"></span>
+               </div>
+               <div class="productSpec">
+               <h3>
+                  Descrizione Prodotto
+               </h3>
+               <input type="text" id="descriptionModify">
+               <span id="descriptionModifyError"></span>
+               </div>
+               <div class="productSpec">
+               <h3>
+                  Nome Brand
+               </h3>
+               <input type="text" id="brandModify">
+               <span id="brandModifyError"></span>
+               </div>
+               <div class="productSpec">
+               <h3>
+                  Immagine Prodotto
+               </h3>
+               <input type="text" id="imageUrlModify">
+               <span id="imageUrlModifyError"></span>
+               </div>
+               <div class="productSpec">
+               <h3>
+                  Prezzo Prodotto
+               </h3>
+               <input type="number" id="priceModify">
+               <span id="priceModifyError"></span>
+               </div>
+            </div>
+            <button onclick="modifyItem()">Modifica Prodotto</button>
+            <input hidden type="text" id="productId">
+         </div>
+      </section>
+   </main>
+
+
+   <script src="../JS/addItems.js"></script>
+</body>
+</html>
