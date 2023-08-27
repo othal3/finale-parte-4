@@ -188,4 +188,9 @@ async function modifyItem() {
       }
    }
 }
+
+function closeModifyForm() {
+   location.reload()
+}
+
 table()
